@@ -29,7 +29,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "bf08kul0md81sb"
+          "uid": "bf0ephq82p9tsf"
         },
         "fieldConfig": {
           "defaults": {
@@ -114,7 +114,7 @@
               "uid": "bf08kul0md81sb"
             },
             "editorMode": "builder",
-            "expr": "go_goroutines",
+            "expr": "go_memstats_other_sys_bytes",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
