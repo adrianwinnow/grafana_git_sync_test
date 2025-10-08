@@ -114,7 +114,7 @@
               "uid": "bf08kul0md81sb"
             },
             "editorMode": "builder",
-            "expr": "go_memstats_other_sys_bytes",
+            "expr": "go_goroutines",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
