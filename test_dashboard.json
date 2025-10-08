@@ -114,7 +114,7 @@
               "uid": "${ds_prometheus}"
             },
             "editorMode": "builder",
-            "expr": "up",
+            "expr": "node_filesystem_free_bytes",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
