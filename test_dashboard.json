@@ -29,7 +29,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "bf0ephq82p9tsf"
+          "uid": "${ds_prometheus}"
         },
         "fieldConfig": {
           "defaults": {
@@ -109,6 +109,10 @@
         "pluginVersion": "12.2.0-16979757807",
         "targets": [
           {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "${ds_prometheus}"
+            },
             "editorMode": "builder",
             "expr": "up",
             "legendFormat": "__auto",
@@ -122,7 +126,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "bf0ephq82p9tsf"
+          "uid": "${ds_prometheus}"
         },
         "fieldConfig": {
           "defaults": {
@@ -183,7 +187,7 @@
           "h": 8,
           "w": 12,
           "x": 0,
-          "y": 0
+          "y": 8
         },
         "id": 1,
         "options": {
@@ -204,7 +208,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "bf0ephq82p9tsf"
+              "uid": "${ds_prometheus}"
             },
             "editorMode": "builder",
             "expr": "node_disk_read_bytes_total",
@@ -222,7 +226,21 @@
     "schemaVersion": 41,
     "tags": [],
     "templating": {
-      "list": []
+      "list": [
+        {
+          "current": {
+            "text": "prometheus",
+            "value": "bf0ephq82p9tsf"
+          },
+          "label": "Datasource",
+          "name": "ds_prometheus",
+          "options": [],
+          "query": "prometheus",
+          "refresh": 1,
+          "regex": "",
+          "type": "datasource"
+        }
+      ]
     },
     "time": {
       "from": "now-6h",
