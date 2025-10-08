@@ -111,10 +111,11 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "bf08kul0md81sb"
+              "uid": "bf0ephq82p9tsf"
             },
             "editorMode": "builder",
-            "expr": "go_goroutines",
+            "expr": "node_disk_read_bytes_total",
+            "instant": false,
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
